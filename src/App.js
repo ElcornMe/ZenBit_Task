@@ -30,7 +30,7 @@ function App() {
     const requestJson = JSON.stringify(requestData);
     console.log(requestJson);
     try {
-      const response = await fetch("http://localhost:3001/api", {
+      const response = await fetch("https://murmuring-sea-33658.herokuapp.com/", {
         method: "POST",
         headers: {
           'Content-Type': 'application/json'
