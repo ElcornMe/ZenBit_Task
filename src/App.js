@@ -30,10 +30,14 @@ function App() {
     const requestJson = JSON.stringify(requestData);
     console.log(requestJson);
     try {
-      const response = await fetch("https://murmuring-sea-33658.herokuapp.com/api", {
+      const response = await fetch("https://mycorsproxy-netuto.herokuapp.com/https://murmuring-sea-33658.herokuapp.com/api", {
         method: "POST",
+        crossDomain: true,
         headers: {
-          'Content-Type': 'application/json'
+           'Content-Type': 'application/json',
+           'Accept': 'application/json',
+           'Origin': 'https://murmuring-sea-33658.herokuapp.com',
+           'Access-Control-Allow-Origin':'*'
         },
         body: requestJson,
       });
