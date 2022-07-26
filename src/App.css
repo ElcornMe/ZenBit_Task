@@ -76,11 +76,11 @@ form {
 }
 
 .Map {
-  width: 576px;
-  height: 576px;
+  width: 490px;
+  height: 550px;
   left: 480px;
-  bottom: 375px;
-  border-radius: 300px;
+  bottom: 355px;
+  border-radius: 600px;
   position: relative;
   z-index: 2;
 }
@@ -124,6 +124,17 @@ form {
     z-index: 4;
   }
 
+  .YellowFace:active {
+    z-index: -1;
+  }
+
+  .GreenFace {
+    position: absolute;
+    left: 76%;
+    top: 190px;
+    z-index: 3;
+  }
+
   .YellowSmile {
     position: absolute;
     left: 89%;
@@ -147,8 +158,8 @@ form {
 
   .cloud-1 {
     position: absolute;
-    left: 80%;
-    top: 5px;
+    left: 75%;
+    top: -40px;
     z-index: 1;
   }
 
@@ -159,6 +170,80 @@ form {
     z-index: 0;
   }
 
+  .Drop-1 {
+    position: absolute;
+    left: 30%;
+    top: 60%;
+    animation-name: drop;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+
+  .Drop-2 {
+    position: absolute;
+    left: 40%;
+    top: 60%;
+    animation-name: drop2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+
+  .Drop-3 {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    animation-name: drop;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+  }
 
 
+  @keyframes drop {
+    0%{
+      top: 90%;
+      opacity: 0;
+    }
+    100%{
+      top: 120%;
+    }
+  }
+
+  @keyframes drop2 {
+    0%{
+      top: 89%;
+      opacity: 0;
+    }
+    100%{
+      top: 120%;
+    }
+  }
+
+.light {
+  position: absolute;
+    left: 90%;
+    top: 120px;
+    width: 40px;
+    animation-name: light;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+} 
+ 
+@keyframes light {
+  0%{
+    opacity: 1;
+  }
+  20%{
+    opacity: 1;
+  }
+  40%{
+    opacity: 0;
+  }
+  60%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+
+}
  
