@@ -79,8 +79,8 @@ form {
   width: 576px;
   height: 576px;
   left: 480px;
-  bottom: 435px;
-  border-radius: 600px;
+  bottom: 375px;
+  border-radius: 300px;
   position: relative;
   z-index: 2;
 }
